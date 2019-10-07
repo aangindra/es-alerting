@@ -61,9 +61,9 @@ const start = async () => {
 
     if (totalCount >= 20 || nullError >= 10 || undefinedError >= 10) {
       await sendReportResult({
-        nullErrorLastHour: nullError,
-        undefinedErrorLastHour: undefinedError,
         totalErrorLastHour: totalCount
+        nullErrorLastHour: nullError,
+        undefinedErrorLastHour: undefinedError
       });
     }
 
