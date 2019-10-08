@@ -59,7 +59,7 @@ const start = async () => {
 
     const totalCount = results.body.hits.total.value;
 
-    if (totalCount >= 20 || nullError >= 10 || undefinedError >= 10) {
+    if (totalCount >= 50 || nullError >= 10 || undefinedError >= 10) {
       await sendReportResult({
         totalErrorLastHour: totalCount,
         nullErrorLastHour: nullError,
